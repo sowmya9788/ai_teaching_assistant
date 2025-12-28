@@ -50,3 +50,32 @@ Reference: Slide 12
 - Voice-based queries
 - Offline model support
 - Improved equation rendering
+Step 1: Clone the Repository
+git clone <your-github-repository-link>
+cd ai_teaching_assistant
+
+Step 2: Create a Virtual Environment
+python -m venv .venv
+
+Step 3: Activate the Virtual Environment
+
+Windows
+
+.venv\Scripts\activate
+
+
+Mac / Linux
+
+source .venv/bin/activate
+
+Step 4: Install Required Dependencies
+pip install -r requirements.txt
+
+Step 5: Run the Streamlit Application
+python -m streamlit run app.py
+
+Step 6: Open the Application
+
+Open the browser and go to:
+
+http://localhost:8501
