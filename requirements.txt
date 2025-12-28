@@ -1,0 +1,27 @@
+# Core
+streamlit>=1.30
+
+# Document processing
+PyMuPDF>=1.23
+PyPDF2>=3.0.1
+python-docx>=0.8.11
+python-pptx>=0.6.21
+
+# Text processing and embeddings
+# NOTE: We intentionally do NOT require sentence-transformers/torch by default (very large on Windows/Python 3.13).
+# The app falls back to scikit-learn HashingVectorizer embeddings automatically.
+scikit-learn>=1.3
+# Optional: only needed if you want OpenAI embeddings/LLM
+openai>=0.28.1
+
+# Vector database
+chromadb>=0.4.15
+faiss-cpu==1.7.4; python_version < '3.13'
+
+# Data
+numpy>=1.24
+python-dotenv>=1.0.0
+
+# Utilities
+tqdm>=4.66
+colorama>=0.4.6
